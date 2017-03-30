@@ -7,6 +7,6 @@ Para teste do broker mqtt via cliente mosquitto em desktop ubuntu:
 
 $ sudo apt-get install mosquitto-clients
 
-$ mosquitto_pub -h "m11.cloudmqtt.com" -p 15034 -t "hello/world" -m "1" -u "oyqmvonl" -P "eCPIJkxVFWBU"
+$ mosquitto_pub -h "m11.cloudmqtt.com" -p 15034 -t "hello/world" -q 1 -m "1" -u "oyqmvonl" -P "eCPIJkxVFWBU"
 
 $ mosquitto_sub -h "m11.cloudmqtt.com" -p 15034 -t "hello/world" -q 1 -u "oyqmvonl" -P "eCPIJkxVFWBU"
