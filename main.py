@@ -24,7 +24,7 @@ def do_connect_wifi():
     if not sta_if.isconnected():
         print('connecting to network...')
         sta_if.active(True)
-        sta_if.connect('XT1580 7008', '80a34ac3c19c')
+        sta_if.connect('SSID_GO_HERE', 'PASS_HERE')
         while not sta_if.isconnected():
             pass
     print('network config:', sta_if.ifconfig())
